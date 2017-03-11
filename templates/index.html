@@ -14,10 +14,18 @@
 		</head>
 <body>
 	<div class="containter-fluid">
+	
 	<div class="row">
-	    <div class="center-block col-md-3" style="float: none;">
-		<h1> Face Thy Tweet.</h1>
+	    <div class="center-block col-md-8" style="float: none;">
+		<h1 style="color:white; font-weight:900; font-size: 60px;"> You Are What You Tweet.</h1>
 		</div>
+		<div class="center-block col-md-3" style="float:none;">
+		<form action="/result" method="POST">
+		<label for="Twitter">Twitter Handle</label>
+    <input type="text" name="twitter-handle" class="form-control" id="twitter">
+  </div>
+    <button type="submit" class="center-block btn btn-default">Submit</button>
+
 		</div>
 		</div>
 	</div>
