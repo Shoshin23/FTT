@@ -5,6 +5,56 @@
 body .input-field {
 	width: 250px;
     }
+
+ body ::-webkit-input-placeholder {
+   font-size: 25px;
+}
+
+body :-moz-placeholder { /* Firefox 18- */
+      font-size: 25px;
+}
+
+body ::-moz-placeholder {  /* Firefox 19+ */
+      font-size: 25px;
+}
+
+/* Overriding styles */
+
+body ::-webkit-input-placeholder {
+   font-size: 15px!important;
+   font-family: Lato!important;
+}
+
+body :-moz-placeholder { /* Firefox 18- */
+      font-size: 15px!important;
+      font-family: Lato!important;
+}
+body ::-moz-placeholder {  /* Firefox 19+ */
+      font-size: 15px!important;
+      font-family: Lato!important;
+}
+
+
+/* enable absolute positioning */
+body .inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+body .inner-addon .glyphicon {
+  position: absolute;
+  padding: 20px;
+  pointer-events: none;
+}
+
+/* align icon */
+body .right-addon .glyphicon { right: 0px; font-size: 20px;}
+
+/* add padding  */
+body .right-addon input { padding-right: 30px; }
+
+
+
 }
 
 
@@ -75,3 +125,59 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+
+
+
+
+
+::-webkit-input-placeholder {
+   font-size: 25px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+      font-size: 25px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+      font-size: 25px;
+}
+
+/* Overriding styles */
+
+::-webkit-input-placeholder {
+   font-size: 20px!important;
+   font-family: Lato!important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+      font-size: 20px!important;
+      font-family: Lato!important;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+      font-size: 20px!important;
+      font-family: Lato!important;
+}
+
+
+
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 20px;
+  pointer-events: none;
+}
+
+/* align icon */
+.right-addon .glyphicon { right: 0px; font-size: 25px;}
+
+/* add padding  */
+.right-addon input { padding-right: 30px; }
+
+
