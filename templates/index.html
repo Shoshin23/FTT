@@ -9,22 +9,22 @@
 		
 		
 		<link rel="stylesheet" type="text/css" href= {{ url_for('static',filename='style.css') }}>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 		<title> Face Thy Tweet </title>
 		</head>
 <body>
-	<div class="containter-fluid">
+	<div class="containter">
 	
-	<div class="row" id="top-buffer">
-	    <div class="center-block col-md-8" style="float: none;">
-		<h1 style="color:white; font-weight:900; font-size: 60px;"> You Are What You Tweet.</h1>
+	<div class="row row-centered">
+	    <div class="col-md-12">
+		<h1> You Are What You Tweet.</h1>
 		</div>
-		<div class="center-block col-md-3" style="float:none;">
+		<div id = "top-buffer" class="center-block col-md-4" style="float:none;">
 		<form action="/result" method="POST">
-    <input type="text" name="twitter-handle" class="form-control" id="twitter">
+    <input type="text" name="twitter-handle" class="form-control input-field" id="twitter">
   </div>
-    <button type="submit" class="center-block btn btn-default">Submit</button>
 
 		</div>
 		</div>

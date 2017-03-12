@@ -1,5 +1,21 @@
 body {
-	background-color: #09AFED;
+	background:radial-gradient(circle, #5497D1,#09AFED);
+
+}
+
+@media (max-width: 320px) {
+	h1{
+	color:white; font-weight:400; font-size: 30px;
+}
+body {
+        background-color: green;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+h1{
+	color:white; font-weight:900; font-size: 50px;
 }
 
 #title-block {
@@ -17,10 +33,32 @@ body {
 }
 
 #top-buffer { 
-	margin-top: 30px;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
+.input-field{
+
+height:50px
+
+}
 
 .element {
   .center-block();
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
