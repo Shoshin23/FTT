@@ -2,6 +2,10 @@ body {
 	background-color: #09AFED;
 }
 
+#title-block {
+	color:white; font-weight:900; font-size: 60px;
+}
+
 .center-block {
   display: block;
   margin-left: auto;
@@ -12,6 +16,9 @@ body {
     bottom: 50%;
 }
 
+#top-buffer { 
+	margin-top: 30px;
+}
 
 
 .element {

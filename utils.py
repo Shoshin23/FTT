@@ -1,5 +1,4 @@
 from twython import Twython
-import time
 import re
 import fasttext
 
@@ -32,3 +31,5 @@ def get_tweets_text(handle):
 		thefile.write("%s\n" %tweet)
 	print("done writing tweets to the file!")
 
+
+# def predict_text(filename): #use fasttext to classify the tweets in this document. 
