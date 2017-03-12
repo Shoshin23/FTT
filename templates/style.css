@@ -1,15 +1,19 @@
+@media (min-width: 0) and (max-width: 640px) {
+    body h1 {
+    	color:white; font-weight:900; font-size: 30px;
+}
+body .input-field {
+	width: 250px;
+    }
+}
+
+
+
+
+
 body {
 	background:radial-gradient(circle, #5497D1,#09AFED);
 
-}
-
-@media (max-width: 320px) {
-	h1{
-	color:white; font-weight:400; font-size: 30px;
-}
-body {
-        background-color: green;
-    }
 }
 * {
     box-sizing: border-box;
@@ -18,9 +22,6 @@ h1{
 	color:white; font-weight:900; font-size: 50px;
 }
 
-#title-block {
-	color:white; font-weight:900; font-size: 60px;
-}
 
 .center-block {
   display: block;
@@ -40,12 +41,24 @@ h1{
     transform: translate(-50%, -50%);
 
 }
+.title-style{
+	margin-top: 100;
+}
 
 .input-field{
 
-height:50px
-
+height:60px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
 
 .element {
   .center-block();
