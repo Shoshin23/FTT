@@ -13,6 +13,10 @@ lis = []
 tweet_text = []
 thefile = open('pred.txt', 'w')
 
+def get_profile_details(handle):
+	user_details = twitter.show_user(screen_name=handle)
+	return user_details 
+
 def get_tweets_text(handle):
 
 	if(lis and tweet_text):  #use 'and' instead of '&&'. Silly. 
@@ -29,6 +33,7 @@ def get_tweets_text(handle):
 			lis.append(tweet['id'])
 	for tweet in tweet_text:
 		thefile.write("%s\n" %tweet)
+	return thefile
 	print("done writing tweets to the file!")
 
 

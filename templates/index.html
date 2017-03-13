@@ -19,12 +19,12 @@
 	
 	<div class="row row-centered">
 	    <div class="col-md-12">
-		<h1 class="title-style"> You Are What You Tweet.</h1>
+		<h1 class="title-style"> You are what you tweet.</h1>
 		</div>
 		<div id = "top-buffer" class="center-block col-md-4" style="float:none;">
 		<form action="/result" method="POST">
 		<div class="inner-addon right-addon">
-		<i class="glyphicon glyphicon-chevron-right"></i>
+		<i class="glyphicon glyphicon-chevron-right"></i>        
     <input placeholder = "Enter your twitter handle..." type="text" name="twitter-handle" class="form-control input-field shadow" id="twitter">
     </div>
     </form>
@@ -36,8 +36,12 @@
 	</div>
 	<footer class="footer">
 	<div class="containter">
-	<p>Made with ❤ by LotusBee </p>
+	<p>Made with ❤ by <a href="http://www.lotus-bee.com/">LotusBee</a></p>
 	</div>
 
+
+	{% if profile_details %} 
+	<p> {{ profile_details }}
+	{% endif %}
 </body>
 </html>

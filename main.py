@@ -7,15 +7,22 @@ app = Flask(__name__, static_folder='templates')
 
 
 
-@app.route('/') #index.
+@app.route('/',methods=['GET','POST']) #index.
 def index():
 	return render_template('index.html')
 
-@app.route('/result',methods=['POST'])
+
+
+@app.route('/result',methods=['GET','POST'])
 def result():
 	handle = request.form['twitter-handle']
-	get_tweets_text(handle)
-	return redirect('/')
+	pred_file = get_tweets_text(handle)
+	profile_details = get_profile_details(handle)
+	return render_template('results.html',profile_details=profile_details)
+
+
+
+
 
 @app.url_defaults
 def hashed_url_for_static_file(endpoint, values):
