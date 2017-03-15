@@ -13,12 +13,13 @@ def index():
 
 
 
-@app.route('/result',methods=['GET','POST'])
+@app.route('/result',methods=['GET']) #Change to include 'POST' also in a bit once you fix the fucking CSS.
 def result():
-	handle = request.form['twitter-handle']
-	pred_file = get_tweets_text(handle)
-	profile_details = get_profile_details(handle)
-	return render_template('results.html',profile_details=profile_details)
+	#handle = request.form['twitter-handle']
+	#get_tweets_text(handle)
+	#profile_details = get_profile_details(handle)
+	# return render_template('results.html', profile_details = profile_details)
+	return render_template('results.html')
 
 
 

@@ -53,6 +53,45 @@ body .right-addon .glyphicon { right: 0px; font-size: 20px;}
 /* add padding  */
 body .right-addon input { padding-right: 30px; }
 
+body .boxed {
+  border: 5px solid white;
+  width: 80%;
+  margin: 9%;
+  height: 550px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+body .profile-img {
+	border: 5px solid white;
+	height: 200px;
+	width: 200px;
+	display: block;
+	margin: auto;
+	margin-top: 10%;
+}
+
+body .profile-name {
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+	margin-left:20%;
+}
+body .profile-handle {
+	color:white;
+	font-size:20px;
+	margin-left:20%;
+
+}
+
+body .tweet-content {
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+	margin-top: 15%;
+
+}
 
 
 }
@@ -260,7 +299,63 @@ font-size: 20px;
 
 
 
+/* STYLE FOR RESULTS PAGE */
+.boxed {
+  border: 8px solid white;
+  width: 80%;
+  margin: 10%;
+  height: 450px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+
+.profile-img {
+	border: 5px solid white;
+	height: 200px;
+	width: 200px;
+	margin-top:5%;
+	margin-left: 5%;
+}
+
+.profile-name {
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+	margin:auto;
+	margin-left:5%;
+}
+
+.profile-handle {
+	color:white;
+	font-size:20px;
+	margin-left: 10%;
+}
+
+.headerDivider {
+     border-left:1px solid #38546d; 
+     border-right:1px solid #16222c; 
+     height:80px;
+     position:absolute;
+     right:249px;
+     top:10px; 
+}
+
+.tweet-content {
+	color: white;
+	margin-top:-27%;
+	text-align: left;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.how-it-works {
+	color: white;
+	font-family: Lato;
+	font-size: large;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
 
 
 

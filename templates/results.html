@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Results.</title>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		
+		<link rel="stylesheet" type="text/css" href= {{ url_for('static',filename='style.css') }}>
+
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Results</title>
 </head>
 <body>
-<h1> Profile Details </h1>
-{{ profile_details }}
+<div class="boxed">
+<div class="row">
 
+<div class="profile-section">
+<img class="profile-img center-block" src="https://pbs.twimg.com/profile_images/839863609345794048/mkpdB9Tf.jpg">
+<p class="profile-name">Jack</p>
+<p class="profile-name">@jack</p>
+<p class="profile-name">Followers: 678403094</p>
+</div>
+
+<div class="text-right col-md-offset-6 col-md-6 tweet-content">
+<p> Uh, oh! </p>
+<p> We looked at 1,725 tweets. </p>
+<p> 72% of them looked negative.</p>
+</div>
+</div>
+<br><br><br><br><br>
+<a class="how-it-works"> How it works? </a>
+<hr>
+</div>
+<div class="row">
+<h1 style="text-align: center;">Here's how you compared to other tweeple.</h1>
+<div class="tweeple"></div>
+</div>
 </body>
 </html>
