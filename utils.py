@@ -51,5 +51,18 @@ def predict_sentiment():
 		classifier = fasttext.load_model('model3.bin',encoding='utf-8')
 		labels = classifier.predict_proba(tweet_sample)
 		print(labels)
+		calc_percentage_with_label(labels)
 	else:
 		print("No tweets to predict!")
+
+def calc_percentage_with_label(labels):
+	#count the number of times you have '__label_pos__'
+	pos = '__label_pos__'
+	neg = '__label_neg__'
+
+	pos_count = labels.count(pos)
+	neg_count = labels.count(neg)
+
+	pos_percentage = (pos_count/labels.len())*100
+
+	print(pos_percentage)
